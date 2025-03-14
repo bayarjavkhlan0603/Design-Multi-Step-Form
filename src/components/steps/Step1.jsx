@@ -10,7 +10,7 @@ export const Step1 = ({ handleSubmit, stepCount, handleInput }) => {
       <div>
         <Input
           label={"First name"}
-          name={"firstname"}
+          name={"firstName"}
           placeholder={"First name"}
           isError={true}
           errorMSG={""}
@@ -18,7 +18,7 @@ export const Step1 = ({ handleSubmit, stepCount, handleInput }) => {
         />
         <Input
           label={"Last name"}
-          name={"lastname"}
+          name={"lastName"}
           placeholder={"Last name"}
           isError={true}
           errorMSG={""}
@@ -26,15 +26,13 @@ export const Step1 = ({ handleSubmit, stepCount, handleInput }) => {
         />
         <Input
           label={"Username"}
-          name={"username"}
+          name={"userName"}
           placeholder={"Username"}
           isError={true}
           errorMSG={""}
           handleInput={handleInput}
         />
       </div>
-
-      <Footers alhamToo={stepCount} blackButtom={handleSubmit} />
     </form>
   );
 };

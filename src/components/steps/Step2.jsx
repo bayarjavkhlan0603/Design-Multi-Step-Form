@@ -9,44 +9,46 @@ export const Step2 = ({
 }) => {
   return (
     <form
-      className=" flex flex-col justify-between h-full gap-3"
+      className=" flex flex-col justify-between h-[82%] gap-3"
       onSubmit={handleSubmit}
     >
       <div>
         <Input
           label={"Email"}
-          name={"firstname"}
+          name={"email"}
           placeholder={"Typing..."}
           isError={true}
           errorMSG={""}
           handleInput={handleInput}
         />
         <Input
+          type={"number"}
           label={"Phone number"}
-          name={"firstname"}
+          name={"phoneNumber"}
           placeholder={"Typing..."}
           isError={true}
           errorMSG={""}
           handleInput={handleInput}
         />
         <Input
+          type={"password"}
           label={"Password"}
-          name={"firstname"}
+          name={"password"}
           placeholder={"Typing..."}
           isError={true}
           errorMSG={""}
           handleInput={handleInput}
         />
         <Input
+          type={"password"}
           label={"Confirm password"}
-          name={"firstname"}
+          name={"confirmPassword"}
           placeholder={"Typing..."}
           isError={true}
           errorMSG={""}
           handleInput={handleInput}
         />
       </div>
-      <Footers alhamToo={stepCount} />
     </form>
   );
 };
